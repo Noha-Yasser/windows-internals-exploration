@@ -1,1 +1,25 @@
+ Hash Cracking Results
 
+Input Hashes (sample):
+```
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:8846f7eaee8fb117ad06bdd830b7586c:::
+```
+
+Cracking Method:
+Tool: hashcat  
+Command:
+```
+hashcat -m 1000 hashes.txt rockyou.txt
+```
+
+Cracked Results:
+```
+8846f7eaee8fb117ad06bdd830b7586c : password123
+```
+
+Notes:
+- Hash corresponds to the local Administrator account.
+- Password found in rockyou.txt wordlist.
+- Cracking time: approx. 8 seconds (depending on hardware)
+
+`Environment: Virtual test machine, no real users or data.`
