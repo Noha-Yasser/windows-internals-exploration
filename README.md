@@ -3,20 +3,18 @@ A practical exploration of Windows authentication mechanisms, focusing on regist
 # Windows Security Internals Exploration
 
 ## Overview
-A practical exploration of Windows authentication mechanisms, focusing on registry file extraction and password hash cracking techniques.
+A hands-on exploration of Windows authentication internals, focusing on how credentials are stored and how attackers might extract and crack password hashes from the registry.
+
 
 ## Topics Covered
-- SAM & SYSTEM file extraction
-- Understanding Windows login process
-- NTLM hash cracking
+Extraction of SAM & SYSTEM registry files  
+- Understanding the Windows logon process and hash storage  
+- Cracking NTLM hashes using common tools
 
 ## Tools Used
-- mimikatz
-- John the Ripper
-- hashcat
-- RegSave/FTK Imager
+- Mimikatz– for dumping hashes from memory  
+- John the Ripper / Hashcat – for offline hash cracking  
+- FTK Imager / reg save – for safe extraction of registry hives
 
 ## Outcome
-Learned how Windows stores password hashes, and practiced cracking weak passwords using real tools in a safe lab environment.
-
-
+Built foundational understanding of credential storage in Windows environments. Practiced identifying and mitigating risks related to credential exposure, in a controlled lab setup.
